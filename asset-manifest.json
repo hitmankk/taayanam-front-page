@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/hitmankk/taayanam-front-page.git/static/css/main.75becb3e.css",
+    "main.js": "/hitmankk/taayanam-front-page.git/static/js/main.9f87d66a.js",
+    "static/js/787.96074fef.chunk.js": "/hitmankk/taayanam-front-page.git/static/js/787.96074fef.chunk.js",
+    "static/media/booking.png": "/hitmankk/taayanam-front-page.git/static/media/booking.a3311aef22ad44b587b7.png",
+    "static/media/appointmentImg.png": "/hitmankk/taayanam-front-page.git/static/media/appointmentImg.edc468bbb27629875dcd.png",
+    "static/media/servicesImg.png": "/hitmankk/taayanam-front-page.git/static/media/servicesImg.7f7b56440b5ebe7ac48d.png",
+    "static/media/AnimationImage1.png": "/hitmankk/taayanam-front-page.git/static/media/AnimationImage1.04791192f0ade2f1bdcb.png",
+    "static/media/aboutImg.png": "/hitmankk/taayanam-front-page.git/static/media/aboutImg.3f51350634d22d3e533c.png",
+    "static/media/backgroundIMG.png": "/hitmankk/taayanam-front-page.git/static/media/backgroundIMG.f00b87300c5e37723fba.png",
+    "static/media/logo.png": "/hitmankk/taayanam-front-page.git/static/media/logo.6f04532f811f753b5a4f.png",
+    "static/media/company-logo.jpg": "/hitmankk/taayanam-front-page.git/static/media/company-logo.6f29404498b3ee845f25.jpg",
+    "static/media/agritech.png": "/hitmankk/taayanam-front-page.git/static/media/agritech.a7821888947254898dbe.png",
+    "static/media/databaseIT.png": "/hitmankk/taayanam-front-page.git/static/media/databaseIT.74c9301949441650c0b1.png",
+    "static/media/customizedIT.png": "/hitmankk/taayanam-front-page.git/static/media/customizedIT.1790f49b57399390709c.png",
+    "index.html": "/hitmankk/taayanam-front-page.git/index.html",
+    "main.75becb3e.css.map": "/hitmankk/taayanam-front-page.git/static/css/main.75becb3e.css.map",
+    "main.9f87d66a.js.map": "/hitmankk/taayanam-front-page.git/static/js/main.9f87d66a.js.map",
+    "787.96074fef.chunk.js.map": "/hitmankk/taayanam-front-page.git/static/js/787.96074fef.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.75becb3e.css",
+    "static/js/main.9f87d66a.js"
+  ]
+}
