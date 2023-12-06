@@ -9,6 +9,7 @@ import Navbar from './component/nav';
 
 
 
+
 class App extends Component { 
 render() { 
 	return ( 
@@ -19,10 +20,10 @@ render() {
 			 
 		<Routes> 
 				<Route exact path='/' element={< Home />}></Route> 
-				{/* <Route exact path='/about' element={< About />}></Route> 
-				<Route exact path='/contact' element={< Contact />}></Route>  */}
+			
 		</Routes> 
 		</div> 
+	
 	</Router> 
 ); 
 } 

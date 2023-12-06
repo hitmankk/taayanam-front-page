@@ -341,7 +341,196 @@ border-radius: 25px;
   transition: transform 0.5s;
 }
 
+/* -------testimonials---------- */
 
+.testimonial{
+  height: fit-content;
+  background: url(../assets/aboutImg.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+  padding: 100px 0px 100px 0px;
+}
+
+/* ------------------------ */
+.Products{
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background: url(../assets/aboutImg.png);
+  background-repeat: no-repeat;
+  background-size:auto;
+  display: block;
+  justify-content:center ;
+  align-items: center;
+}
+.Product1{
+ padding: 60px;
+ margin-left: 10px;
+background: url(../assets/booking.png);
+background-repeat: no-repeat;
+background-size: cover;
+border-radius: 60px;
+ width: 41%;
+}
+.slideInSection1 {
+  display: flex;
+  
+padding: 30px;
+  opacity: 0;
+  transform: translateY(20px); /* Adjust the initial translation as needed */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.slideInSection1.visible {
+  display: flex;
+  justify-content: left;
+  opacity: 1;
+  transform: translateX(250px);
+  width: 50%;
+ left: 0;
+  height: fit-content;
+}
+.Product3{
+ padding: 60px;
+ margin-left: 10px;
+background: url(../assets/booking.png);
+background-repeat: no-repeat;
+background-size: cover;
+border-radius: 60px;
+ width: 41%;
+}
+.slideInSection3 {
+  
+padding: 30px;
+display: flex;
+justify-content: left;
+  opacity: 0;
+  transform: translateY(20px); /* Adjust the initial translation as needed */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.slideInSection3.visible {
+  opacity: 1;
+  transform: translateX(250px);
+  width: 30%;
+ left: 0;
+  height: fit-content;
+}
+.Product2{
+  display: flex;
+  justify-content: right;
+ padding: 60px;
+background: url(../assets/booking.png);
+background-repeat: no-repeat;
+background-size: cover;
+border-radius: 60px;
+ width: 41%;
+ margin-left: 50%;
+}
+.slideInSection2 {
+  right: 0;
+padding: 30px;
+display: flex;
+justify-content: right;
+  opacity: 0;
+  transform: translateY(20px); /* Adjust the initial translation as needed */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.slideInSection2.visible {
+  opacity: 1;
+  transform: translateX(-250px);
+  width: 50%;
+ right: 0;
+  height: fit-content;
+}
+.Product4{
+  display: flex;
+  justify-content: right;
+ padding: 60px;
+background: url(../assets/booking.png);
+background-repeat: no-repeat;
+background-size: cover;
+border-radius: 60px;
+ width: 41%;
+ margin-left: 50%;
+}
+.slideInSection4 {
+  right: 0;
+  display: flex;
+  justify-content: right;
+  padding: 30px;
+  opacity: 0;
+  transform: translateY(20px); /* Adjust the initial translation as needed */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.slideInSection4.visible {
+  opacity: 1;
+  transform: translateX(-250px);
+  width: 50%;
+ right: 0;
+  height: fit-content;
+}
+
+
+/* ---------------------------- */
+.contactForm{
+  display: flex;
+  background: url(../assets/contactImg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 60px;
+  padding-bottom: 15%;
+}
+.contact-left{
+  flex-basis: 35%;
+  z-index: 1;
+}
+
+.contact-right{
+  flex-basis: 60%;
+  z-index: 9;
+}
+
+
+
+.btn.btn2{
+  display: inline-block;
+  background: orangered;
+  z-index: 9;
+  color: white;
+  border: none;
+  border-radius: 50px;
+
+}
+.contact-right form{
+  width: 100%;
+
+}
+form input, form textarea{
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #ffffff;
+  padding: 15px;
+  margin: 15px 0;
+  color: #000000;
+  font-size: 18px;
+  border-radius: 6px;
+
+}
+form .btn2{
+  padding: 14px 60px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+  z-index: 9;
+}
+#msg{
+  color: #61b752;
+  display: block;
+margin-top: -20px; 
+}
 /* mobile size */
 @media screen and (max-width: 1200px) {
   .slide-text,
@@ -415,6 +604,16 @@ border-radius: 25px;
     padding-right: 5%;
   }
 
+  .contactForm{
+    background: url(../assets/contactImg.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+  .contact-left{
+  
+    padding-right: 15px;
+  }
+
   .Appointment h2,
   .Appointment p,
   .Appointment .input,
@@ -424,5 +623,53 @@ border-radius: 25px;
     margin-top: 5%;
     /* Make these elements full-width on smaller screens */
   }
+  /* ------------------------- */
+  .Products{
+    display: block;
+    margin: 10%;
+  }
+  .Product1{
+    margin-left: 5px;
+  }
+  .Product1,
+  .Product3,
+  .Product2,
+  .Product4 {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 10%;
+    margin: auto;
+   margin-top: 3%;
+  }
+  .slideInSection1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+
+  }
+  .slideInSection1.visible {
+    transform: translateX(0);
+    justify-content: center;
+  }
+
+  .slideInSection3.visible {
+    transform: translateX(0);
+    justify-content: center;
+  }
+
+  .slideInSection2.visible {
+    transform: translateX(0);
+    justify-content: center;
+  }
+
+  .slideInSection4.visible {
+    transform: translateX(0);
+    justify-content: center;
+  }
+  
 
 }

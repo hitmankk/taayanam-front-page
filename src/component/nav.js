@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { FaBars, FaTimes, FaCode } from 'react-icons/fa';
+import React from 'react';
+
 import './nav.css';
 import Logo from '../assets/logo.png';
 import { NavLink } from 'react-router-dom';
@@ -52,7 +52,30 @@ function Navbar() {
                 className="nav-links"
                 onClick={click ? handleClick : null}
               >
-            About
+          Testimonials
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/"
+                activeClassName="active"
+                className="nav-links"
+               onClick={click ? handleClick : null}
+              >
+                Products
+              </NavLink>
+            </li>
+
+            <li className="nav-item">
+              <NavLink
+                exact
+                to="/"
+                activeClassName="active"
+                className="nav-links"
+               onClick={click ? handleClick : null}
+              >
+                About Us
               </NavLink>
             </li>
             <li className="nav-item">

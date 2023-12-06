@@ -84,7 +84,10 @@
     color:#ffffff;
     font-size:22px;
   }
-  
+  .com{
+    left: 0;
+
+  }
   .com ul li{
     left: 0;
     padding: 5px;

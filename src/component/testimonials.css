@@ -1,0 +1,49 @@
+/* Testimonials.css */
+.testimonials-container {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    height: 100%;
+    
+  }
+  
+  .testimonials-slider {
+    display: flex;
+align-items: center;
+animation: slide 20s linear infinite;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  /* Optional: Adjust width for responsive design */
+  .testimonials-slider > div {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  
+  /* Optional: Add some padding for better spacing */
+  .testimonials-slider > div {
+    padding: 0 10px;
+  }
+  
+  /* Optional: Add media queries for responsive design */
+  @media screen and (min-width: 768px) {
+    .testimonials-slider > div {
+      flex: 0 0 50%;
+      max-width: 50%;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .testimonials-slider > div {
+      flex: 0 0 33.33%;
+      max-width: 33.33%;
+    }
+  }
+  

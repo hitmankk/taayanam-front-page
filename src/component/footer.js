@@ -23,27 +23,28 @@ class Footer extends Component{
       </div>
     </div>
     <div class="com">
-      <h1>About</h1>
+     
       <ul >
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
+      <li> <h1>About</h1></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="/">About</a></li>
+        <li><a href="/">Services</a></li>
+        <li><a href="/">Contact</a></li>
       </ul>
     </div>
     <div class="info" >
       <h1>Social Media</h1>
       <div className="sociallogos">
         <div className="logobox">
-          <a href="#"><FaTwitter/></a>
-          <a href="#"><FaLinkedin/></a>
-          <a href="#"><FaFacebook/></a>
-          <a href="#"><FaInstagram/></a>
+          <a href="/"><FaTwitter/></a>
+          <a href="/"><FaLinkedin/></a>
+          <a href="/"><FaFacebook/></a>
+          <a href="/"><FaInstagram/></a>
         </div>
       </div>
     </div>
     </div>
-  <footer>© Investocal Copyright 2022 All Rights Reserved</footer>
+  <footer>© Tayanam Copyright 2023 All Rights Reserved</footer>
   </div>
 </>
   )

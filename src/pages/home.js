@@ -18,15 +18,24 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import Footer from '../component/footer';
+import emailjs from "@emailjs/browser";
+import Testimonials from '../component/testimonial';
+
 
 
 
 
 
 function Home() {
- 
+  const [isVisible, setIsVisible] = useState(false);
    const swiperContainerRef = useRef(null);
    const swiperRef = useRef(null);
+   const slideInSectionRef1 = useRef(null);
+   const slideInSectionRef2 = useRef(null);
+   const slideInSectionRef3 = useRef(null);
+   const slideInSectionRef4 = useRef(null);
+   
+
 
    useEffect(() => {
       const swiperContainer = swiperContainerRef.current;
@@ -59,6 +68,60 @@ function Home() {
       };
    }, []);
 
+   useEffect(() => {
+    const createObserver = (ref, className) => {
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          setIsVisible((prev) => ({ ...prev, [className]: entry.isIntersecting }));
+        },
+        { threshold: 0.5 }
+      );
+  
+      if (ref.current) {
+        observer.observe(ref.current);
+      }
+  
+      return () => {
+        if (ref.current) {
+          observer.unobserve(ref.current);
+        }
+      };
+    };
+  
+    createObserver(slideInSectionRef1, 'slideInSection1');
+    createObserver(slideInSectionRef2, 'slideInSection2');
+    createObserver(slideInSectionRef3, 'slideInSection3');
+    createObserver(slideInSectionRef4, 'slideInSection4');
+  }, []);
+  
+  
+  const testimonialData = [
+    { text: 'This is an amazing product!', author: 'John Doe' },
+    { text: 'I love using this service every day.', author: 'Jane Smith' },
+    { text: 'This is an amazing product!', author: 'John Doe' },
+    { text: 'I love using this service every day.', author: 'Jane Smith' },
+    { text: 'This is an amazing product!', author: 'John Doe' },
+    { text: 'I love using this service every day.', author: 'Jane Smith' },
+    { text: 'This is an amazing product!', author: 'John Doe' },
+    { text: 'I love using this service every day.', author: 'Jane Smith' },
+    // Add more testimonials as needed
+  ];
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_49j5nvd', 'template_wifux6d', form.current, 'Z6eTCcOSDCZT9gFGS')
+      .then((result) => {
+          console.log(result.text);
+          alert('Email sent successfully!'); // Display a success message
+      }, (error) => {
+          console.log(error.text);
+          alert('Error sending email. Please try again.'); // Display an error message
+      });
+  };
+ 
    return (
      
 
@@ -135,7 +198,7 @@ we provide</h1>
 
 
       </h4>
-      <a href="#">Learn More</a>
+      <a href="/">Learn More</a>
     </div>
     <div className='servicesDiv'>
     <img className='servicesImg2' src={CustomizedIT} alt=''/>
@@ -146,7 +209,7 @@ we provide</h1>
         website with favourable UI/UX design and can
         promise to offer the same.
       </p>
-      <a href="#">Learn More</a>
+      <a href="/">Learn More</a>
     </div>
     <div className='servicesDiv'>
       <img className='servicesImg3' src={datbaseIT} alt=''/>
@@ -155,14 +218,57 @@ we provide</h1>
         the database i.e. Normalize the database and fetch
         all the data when required.
       </p>
-      <a href="#">Learn More</a>
+      <a href="/">Learn More</a>
     </div>
 
   </div>
 </div>
 
 </div>
+<div  className='testimonial'>
+<h1 class="sub-title">Testimonials</h1>
+<Testimonials data={testimonialData}/>
+</div>
+<div className='Products'>
+<h1 class="sub-title">Products</h1>
+<div className='Product1'>
 
+<div className={`slideInSection1 ${isVisible.slideInSection1 ? 'visible' : ''}`} ref={slideInSectionRef1}>
+  {/* Your slide-in section content goes here */}
+  
+  <h1>Product1</h1>
+</div>
+</div>
+<div className='Product2'>
+
+<div className={`slideInSection2 ${isVisible.slideInSection2 ? 'visible' : ''}`} ref={slideInSectionRef2}>
+  {/* Your slide-in section content goes here */}
+  
+  <h1>Product2</h1>
+</div>
+</div>
+<div className='Product3'>
+
+<div className={`slideInSection3 ${isVisible.slideInSection3 ? 'visible' : ''}`} ref={slideInSectionRef3}>
+  {/* Your slide-in section content goes here */}
+  
+  <h1>Product3</h1>
+</div>
+</div>
+<div className='Product4'>
+
+
+<div className={`slideInSection4 ${isVisible.slideInSection4 ? 'visible' : ''}`} ref={slideInSectionRef4}>
+  {/* Your slide-in section content goes here */}
+  
+  <h1>Product4</h1>
+</div>
+</div>
+</div>
+
+
+
+     
 <div class="about" id="about">
     <div class="container">
       <div class="row">
@@ -181,6 +287,24 @@ Our core expertise lies in three key areas - Agritech, Customized IT Solutions, 
           </div>
           </div>
           </div>
+          </div>
+          <div className="contactForm">
+          <div className="contact-left">
+          <h1 className="sub-title">Contact Us</h1>
+       
+        
+        
+        </div>
+
+         <div className="contact-right">
+         <form ref={form} onSubmit={sendEmail}>
+            <input type="text"  name="user_name" placeholder="Your Name" required/>
+            <input type="email" name="user_email" placeholder="Your Email" required/>
+            <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          
+        </div>
           </div>
   <Footer/>
   
