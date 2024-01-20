@@ -1,0 +1,60 @@
+.ai-left{
+  width: 50%;
+padding: 20px 15px 20px 15px;
+}
+.ai-right
+{
+  width: 50%;
+  padding: 20px 15px 20px 15px;
+}
+
+.ai{
+   display: flex;
+    width: 100%;
+ padding: 10px;
+    justify-content:space-between;
+}
+.aImg{
+    width: 25%;
+    padding: 10px 15px 10px 15px;
+   
+}
+.IOmg{
+    width: 35%;
+    padding: 10px 15px 10px 15px;
+}
+.BigImg{
+    width: 35%;
+    padding: 10px 15px 10px 15px;
+}
+.GeoImg{
+    width: 35%;
+    padding: 10px 15px 10px 15px;
+}
+
+.para{
+  padding: 10px 85px 10px 65px;
+  text-align: left;
+  font-size: 15px;
+  color: gray;
+}
+/* Responsive styles for small screens */
+@media (max-width: 768px) {
+    .ai,.ai-left,.ai-right {
+      width: 100%;
+      flex-direction: column; /* Stack items vertically on small screens */
+      align-items: center; /* Center items horizontally on small screens */
+justify-content: center;    
+    }
+  .para{
+    padding: 0px;
+  }
+ 
+    .aImg,
+    .IOmg,
+    .BigImg,
+    .GeoImg {
+     display: none;
+    }
+   
+  }

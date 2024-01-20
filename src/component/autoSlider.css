@@ -1,0 +1,17 @@
+/* AutoSlideshow.css */
+
+.VideoCarousel1{
+  background-color: black;
+  width: 100%;
+  overflow: hidden;
+}
+.VideoCarousel{
+  width: 70%;
+
+}
+@media screen and (max-width: 768px) {
+.VideoCarousel{
+  width: 100%;
+ 
+}
+}

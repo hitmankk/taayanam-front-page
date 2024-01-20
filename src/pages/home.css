@@ -1,11 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,400i|IBM+Plex+Sans+Condensed:400,400i|IBM+Plex+Sans:100,100i,400,400i,700,700i|IBM+Plex+Serif:400,400i');
 @import url('https://kit.fontawesome.com/297a71943d.js');
 
+
 body {
   font-family: 'IBM Plex Mono', monospace;
   font-family: 'IBM Plex Sans', sans-serif;
   font-family: 'IBM Plex Serif', serif;
+  font-style: normal;
+  /* color: gray; */
+  font-weight: 400;
   margin: 0;
+  text-align: left;
   padding: 0;
   /* background-color: #b4b4b4; */
   
@@ -26,15 +31,20 @@ body {
 
 /* -----about------ */
 #about{
-   padding: 80px ;
+   padding: 10% 5% 10% 8%;
    color: #949494;
    background-color: aliceblue;
    background: url(../assets/aboutImg.png);
    background-repeat: no-repeat;
    background-size: cover;
+ 
 }
 #about p{
-   font-size: 25px;
+   font-size: 22px;
+   text-align: left;
+   box-shadow: 10px 10px 11px 0px rgb(224, 224, 224);
+   border-radius: 20px;
+   padding:10px;
 }
 .row{
    display: flex;
@@ -45,13 +55,18 @@ body {
    flex-basis: 35%;     
    }
 .about-col-1 img{
-   width: 100%;
+   width: 110%;
+   height: 110%;
    border-radius: 15px;
    box-shadow: 0px 0px 20px 5px rgb(230, 111, 14) ;
    /* animation: slidin 2s ease-in-out 1 forwards; */
    
 
 }    
+.aboutImg{
+  width: fit-content;
+  height: fit-content;
+}
 .about-col-2{
    flex-basis: 60%;
    border-radius: 50px;
@@ -60,8 +75,11 @@ body {
 .sub-title{
    font-size: 50px;
    font-weight: 600;
-   color: orangered;
-   
+   color: rgb(0, 0, 0);
+ 
+   border-radius: 30px;
+   width: auto;
+   padding: 10px;
 
 }
 
@@ -72,199 +90,6 @@ body {
   to {
     transform: translateX(0%);
   }
-}
-
-.swiper-container {
-  display: block;
-  width: 100%;
-  height: 100vh;
-  margin: auto;
-  overflow: hidden; /* Ensure that overflow is hidden to hide the text outside the container */
-  background-image: url(../assets/backgroundIMG.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.96;
- 
-z-index: -1;
-}
-
-.swiper-slide {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end; /* Align text to the right side */
-  opacity: 0;
-  animation: slidein 5s ease-in-out 1 forwards;
-
-}
-
-
-.swiper-slide-active {
-  opacity: 1;
-  transform: translateX(0);
-}
-
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start; /* Align text to the left side */
-
-}
-
-.slide-image {
-  width: 30%;
-  max-height: 60vh;
-  object-fit: cover;
- 
-  z-index: -1;
-}
-
-.slide-text {
-  background-color: rgba(51, 51, 51, 0);
-  font-size: 20px;
-  color: orangered;
-  margin-top:10%;
-  margin-left: 70%; /* Adjust for smaller screens */
-  padding: 2px;
-  border-radius: 6px;
-  /* box-shadow: 0px 0px 1px 1px rgb(255, 0, 0); */
-  z-index: 3;
-  animation: slideText 7s ease-in-out 1 forwards;
- 
-
-}
-
-.slide-text2 {
-  background-color: rgba(230, 111, 14, 0);
-  color: rgb(255, 255, 255);
- 
- margin-top: -5%;
-  margin-left: 70%; /* Adjust for smaller screens */
-  padding: 3px ;
-  border-radius: 6px;
-
-  z-index: 3;
-  animation: slideText 6s ease-in-out 1 forwards;
-
-
-}
-
-.slide-text3 {
-  background-color: rgba(255, 255, 255, 0);
-  
-  color: rgb(131, 131, 100);
- 
-  margin-top: -4%;
-
-  margin-left: 60%; /* Adjust for smaller screens */
-  padding: 3px;
-  border-radius: 6px;
-  /* box-shadow: 0px 0px 1px 1px rgb(255, 0, 0); */
-  z-index: 3;
-  animation: slideText 5.5s ease-in-out 1 forwards;
-
-
-}
-
-@keyframes slideText {
-
-    from {
-      transform: translateY(-250%);
-    }
-    to {
-      transform: translateY(0%);
-    }
-  }
-  
- 
-    /* 0%, 20%, 50%, 80%, 100% {
-      opacity: 0.5;
-      transform: translateY(0);
-    }
-    
-    40% {
-      opacity: 0.8;
-      transform: translateY(-250%);
-    }
-    
-    60% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  } */
-  
-/* Media queries for responsive design */
-
-@media screen and (max-width: 1200px) {
-  .slide-text,
-  .slide-text2,
-  .slide-text3 {
-    margin-left: 5%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .slide-text,
-  .slide-text2,
-  .slide-text3 {
-    margin-left: 2%;
-  }
-}
-/* appointment */
-.appointmentcontain{
-  background: url(../assets/appointmentImg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 1%;
-  padding-left: 11%;
-  padding-right: 11%;
-  padding-bottom: 8%;
-}
-.Appointment{
- display: block;
-  background-image: url(../assets/booking.png);
-  background-size: cover;
-  padding: 20px 40px 50px 40px ;
-  
-  justify-content: left;
-  align-items: start;
-  
-
-  z-index: 5;
-border-radius: 30px;
-  
-}
-.Appointment h2{
-  display: flex;
-  justify-content: flex-start;
-  color: #ffffff;
-  font-size: 35px;
-
-}
-.Appointment p{
-  display: flex;
-  justify-content: flex-start;
-  color: #e6e6e6;
-  font-size: 15px;
-
-}
-.Appointment .input{
-  padding: 10px;
-  background-color: #ffe5d0;
-  margin-left: 2%;
-  color: #000000;
-  font-size: medium;
-width: 250px;
-border: 0;
-border-radius: 25px;
-}
-.Appointment button{
-  padding: 18px 50px;
-  margin-left: 2%;
-  background-color: orangered;
-  color: white;
-  border: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0px 0px 11px 1px orange;
 }
 
 
@@ -282,6 +107,7 @@ border-radius: 25px;
   animation: slidin 2s ease-in-out 1 infinite;
    /* transform:translateY(-10px); */
    font-weight: 600;
+   text-align: left;
 }
 .services-list{
    display: grid;
@@ -293,11 +119,16 @@ border-radius: 25px;
 .services-list .servicesDiv{
    background: #ffffff;
    padding-top: 10px;
+   padding-bottom: 20px;
    font-size: 13px;
    font-weight: 300;
    border-radius: 10px;
    box-shadow: 0px 0px 1px 1px rgb(230, 111, 14);
    transition: background 0.5s, transform 0.5s;
+}
+.services-list .servicesDiv p{
+  text-align: left;
+  padding: 10px 15px 10px 15px;
 }
 .services-list .servicesDiv i{
    font-size: 70px;
@@ -328,151 +159,86 @@ border-radius: 25px;
 }
 
 .servicesImg{
-  height: 50%;
-  transition: transform 0.5s;
+  height: 35%;
+ transition: transform 0.5s;
 }
 .servicesImg2{
-  height: 50%;
+  height: 35%;
   transition: transform 0.5s;
 }
 .servicesImg3{
-  width: 70%;
-  height: 50%;
+  height: 35%;
   transition: transform 0.5s;
 }
 
 /* -------testimonials---------- */
 
 .testimonial{
-  height: fit-content;
+  height:fit-content;
   background: url(../assets/aboutImg.png);
   background-repeat: no-repeat;
   background-size:cover;
   padding: 100px 0px 100px 0px;
+
 }
 
 /* ------------------------ */
 .Products{
-  padding-top: 1%;
-  padding-bottom: 1%;
-  background: url(../assets/aboutImg.png);
-  background-repeat: no-repeat;
-  background-size:auto;
-  display: block;
-  justify-content:center ;
-  align-items: center;
+
+background: url(../assets/appointmentImg.png);
+background-size: contain;
+
+  
+  
 }
 .Product1{
- padding: 60px;
- margin-left: 10px;
-background: url(../assets/booking.png);
-background-repeat: no-repeat;
-background-size: cover;
-border-radius: 60px;
- width: 41%;
-}
-.slideInSection1 {
-  display: flex;
-  
-padding: 30px;
-  opacity: 0;
-  transform: translateY(20px); /* Adjust the initial translation as needed */
-  transition: opacity 0.5s ease, transform 0.5s ease;
+ padding: 0px 50px 0px 50px;
+ display: flex;
+ justify-content: space-between;
+ 
+
+
+ width: 100%;
 }
 
-.slideInSection1.visible {
-  display: flex;
-  justify-content: left;
-  opacity: 1;
-  transform: translateX(250px);
-  width: 50%;
- left: 0;
-  height: fit-content;
-}
-.Product3{
- padding: 60px;
- margin-left: 10px;
-background: url(../assets/booking.png);
-background-repeat: no-repeat;
-background-size: cover;
-border-radius: 60px;
- width: 41%;
-}
-.slideInSection3 {
-  
-padding: 30px;
-display: flex;
-justify-content: left;
-  opacity: 0;
-  transform: translateY(20px); /* Adjust the initial translation as needed */
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
 
-.slideInSection3.visible {
-  opacity: 1;
-  transform: translateX(250px);
+
+
+
+
+
+
+.aiStack{
   width: 30%;
- left: 0;
-  height: fit-content;
+  padding: 5% 0 5% 0;
+  
 }
-.Product2{
-  display: flex;
-  justify-content: right;
- padding: 60px;
-background: url(../assets/booking.png);
-background-repeat: no-repeat;
-background-size: cover;
-border-radius: 60px;
- width: 41%;
- margin-left: 50%;
-}
-.slideInSection2 {
-  right: 0;
-padding: 30px;
-display: flex;
-justify-content: right;
-  opacity: 0;
-  transform: translateY(20px); /* Adjust the initial translation as needed */
-  transition: opacity 0.5s ease, transform 0.5s ease;
+.IOT{
+  width: 30%;
+padding: 5% 0 5% 0;
 }
 
-.slideInSection2.visible {
-  opacity: 1;
-  transform: translateX(-250px);
-  width: 50%;
- right: 0;
-  height: fit-content;
-}
-.Product4{
-  display: flex;
-  justify-content: right;
- padding: 60px;
-background: url(../assets/booking.png);
-background-repeat: no-repeat;
-background-size: cover;
-border-radius: 60px;
- width: 41%;
- margin-left: 50%;
-}
-.slideInSection4 {
-  right: 0;
-  display: flex;
-  justify-content: right;
-  padding: 30px;
-  opacity: 0;
-  transform: translateY(20px); /* Adjust the initial translation as needed */
-  transition: opacity 0.5s ease, transform 0.5s ease;
+.stackH{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size:xx-large;
+  font-weight: 1000;
+  color: #000000;
+  text-decoration: underline orangered;
+  text-underline-offset: 8px;
+  text-shadow: 1px 1px #c9c9c9;
+  font-variant:small-caps;
+  font-style: oblique;
 }
 
-.slideInSection4.visible {
-  opacity: 1;
-  transform: translateX(-250px);
-  width: 50%;
- right: 0;
-  height: fit-content;
+.para1{
+  padding: 8% 10% 0% 10%;
+  color: gray;
+  text-align: left;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px 1px rgb(202, 202, 202);
+
 }
-
-
 /* ---------------------------- */
 .contactForm{
   display: flex;
@@ -511,7 +277,7 @@ form input, form textarea{
   width: 100%;
   border: 0;
   outline: none;
-  background: #ffffff;
+  background: #f9bd68;
   padding: 15px;
   margin: 15px 0;
   color: #000000;
@@ -533,34 +299,23 @@ margin-top: -20px;
 }
 /* mobile size */
 @media screen and (max-width: 1200px) {
-  .slide-text,
-  .slide-text2,
-  .slide-text3 {
-    margin-left: 5%;
-  }
+ 
 }
 @media screen and (max-width: 768px) {
+  .services-list .servicesDiv{
+    padding-bottom: 15%;
+  }
+  .contactForm, .contact-left, .contact-right{
+    flex-basis: 100%;
+    flex-direction: column; /* Stack items vertically on small screens */
+  align-items: center; /* Center items horizontally on small screens */
+justify-content: center;   
+    padding: 10px;
+  }
   .sub-title{
     font-size: 30px;
     }
-  .slide-text
-   {
-    margin-left: 2%;
-    margin-top:2% ;
-    font-size: 18px;
-  }
-  .slide-text2{
-    margin-left: 30%;
-    margin-top: -15%;
-   
-  }
-  
-  .slide-text3{
-    margin-left: 0%;
-    margin-top: -15%;
-    padding: 15px;
-    font-size: 8px;
-  }
+
   .servicesDiv{
     padding-left: 2px;
     padding-right: 2px;
@@ -589,6 +344,7 @@ margin-top: -20px;
   }
 .about-col-1 .aboutImg{
   width:150px;
+  
 }
   .about-col-2 {
     flex-basis: 100%;
@@ -631,45 +387,30 @@ margin-top: -20px;
   .Product1{
     margin-left: 5px;
   }
-  .Product1,
-  .Product3,
-  .Product2,
-  .Product4 {
-    display: flex;
+  .Product1
+ {
+  flex-direction: column; /* Stack items vertically on small screens */
+  align-items: center; /* Center items horizontally on small screens */
+justify-content: center;   
     padding: 10px;
-    justify-content: center;
-    align-items: center;
+ 
+   
     width: 100%;
     border-radius: 10%;
     margin: auto;
    margin-top: 3%;
   }
-  .slideInSection1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
- 
-
-  }
-  .slideInSection1.visible {
-    transform: translateX(0);
-    justify-content: center;
+  .para1{
+    padding: 10px 0px 10px 20px;
   }
 
-  .slideInSection3.visible {
-    transform: translateX(0);
-    justify-content: center;
+  .aiStack{
+    width: 50%;
+    /* padding: 4% 8% 0 0; */
+    
   }
-
-  .slideInSection2.visible {
-    transform: translateX(0);
-    justify-content: center;
+  .IOT{
+    width: 50%;
+  /* padding: 5% 0 5% 0; */
   }
-
-  .slideInSection4.visible {
-    transform: translateX(0);
-    justify-content: center;
-  }
-  
-
 }

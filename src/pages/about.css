@@ -1,0 +1,85 @@
+.start{
+    width: 80%;
+    height: 50%;
+    
+}
+.vision{
+       background: url(../assets/aboutUs2.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+width: 100%;
+    
+}
+.visionHeading{
+    font-size: 3.5rem;
+    text-decoration: underline orangered;
+    text-underline-offset: 8px;
+
+
+}
+.mission{
+    background: url(../assets/aboutUs3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: end;
+}
+.text2{
+    width: 60%;
+    padding: 5% 5% 10% 15%;
+    justify-content: right;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(164, 164, 164);
+}
+.text{
+ font-weight: 800;
+ color: rgb(122, 122, 122);
+font-size: 1.8rem;
+}
+.text1{
+width: 55%;
+    padding: 6%;
+    gap: 4px;
+    justify-content: left;
+    align-content: flex-start;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(164, 164, 164);
+}
+.left2{
+    width: 100%;
+    height: 100%;
+}
+.goal{
+    display: 'flex';
+    background: url(../assets/goals.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@media (max-width: 768px) {
+    .start {
+      width: 100%; /* Adjusted for mobile */
+    }
+    .goal{
+width: 100%;
+        background: none;
+
+    }
+    .mission{
+        width: 100%;
+        background:none;
+     
+    }
+    .vision{
+        background: none;
+    
+ width: 100%;
+     
+ }
+    .text2,
+    .text1 {
+      width: 100%;
+      padding: 10px; /* Adjusted for mobile */
+    }
+  }

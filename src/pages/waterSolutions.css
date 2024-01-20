@@ -1,0 +1,92 @@
+.body{
+    background-color:rgb(255, 247, 233);
+}
+.agritech{
+   
+    background-color: #101318;
+}
+.agritechImg{
+    width: 75%;
+    
+}
+.agriDetails{
+    background-size: cover;
+    display: grid;
+  
+
+}
+.AI{
+    background: url(../assets/AI.png);
+    background-size: cover;
+}
+.cloud{
+    background: url(../assets/cloud.png);
+    background-size: cover;
+}
+.data{
+    background: url(../assets/data.png);
+    background-size: cover;
+}
+.lead{
+
+    font-size: medium;
+}
+.agriHeading{
+    color: rgb(255, 80, 109);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    padding: 5%;
+}
+.agriPara{
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    line-height: 38px;
+    font-weight: 500;
+    padding: 1%;
+margin-right: 0%;
+}
+.agriSubPara{
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    /* line-height: 38px; */
+    font-weight: 500;
+    padding: 1%;
+margin-right: 0%;
+}
+.agritechSection1{
+    padding-top: 8% ;
+    padding-bottom: 8%;
+    background: url(../assets/aboutImg.png);
+}
+.agritech3{
+    background: url(../assets/agritech3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-color: #101318;
+    border-width: 1px;
+    box-shadow:  5px 5px 6px #848484,
+    -5px -5px 6px #cbcbcb;
+}
+.agritech4{
+    background: url(../assets/smart-farming-with-agriculture-iot.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow:  5px 5px 6px #848484,
+    -5px -5px 6px #cbcbcb;
+}
+.watertech5{
+    background: url(../assets//waterSustain.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow:  5px 5px 6px #848484,
+    -5px -5px 6px #cbcbcb;
+
+}
+
+/* --------------- */
+
+.container{
+  padding-top: 5%;
+  background:#dcdcdc;
+}
