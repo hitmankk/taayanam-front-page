@@ -5,11 +5,22 @@ import Logo from "../assets/LOGO FINAL PNG (1).png";
 
 function Navbar() {
   const [click, setClick] = useState(false);
+
   const [dropdownVisible, setDropdownVisible] = useState(false);
+  const [isDropdownOpen, setDropdownOpen] = useState(false);
+
+  const handleDropdownToggle = () => {
+    setDropdownOpen(!isDropdownOpen);
+  };
+
+  const handleDropdownClose = () => {
+    setDropdownOpen(false);
+    setClick(false); // Close the entire navbar when a link is clicked
+  };
 
   const handleClick = () => {
     setClick(!click);
-    setDropdownVisible(false); // Close dropdown when clicking on other menu items
+    setDropdownOpen(false); // Close the dropdown when clicking on other menu items
   };
 
   return (
@@ -58,16 +69,18 @@ function Navbar() {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                   style={{ color: "white" }}
+                  onClick={handleDropdownToggle}
                 >
                   Industries
                 </NavLink>
-                <ul className="dropdown-menu">
+                <ul className={`dropdown-menu ${isDropdownOpen ? "show" : ""}`}>
                   <li>
                     <NavLink
                       className="dropdown-item"
                       exact
                       to="/agritech"
                       activeClassName="active"
+                      onClick={handleDropdownClose}
                     >
                       Agritech
                     </NavLink>
@@ -78,6 +91,7 @@ function Navbar() {
                       exact
                       to="/waterSolutions"
                       activeClassName="active"
+                      onClick={handleDropdownClose}
                     >
                       Water Resource Management
                     </NavLink>
@@ -88,6 +102,7 @@ function Navbar() {
                       exact
                       to="/customizedIt"
                       activeClassName="active"
+                      onClick={handleDropdownClose}
                     >
                       Customized It Solutions
                     </NavLink>
