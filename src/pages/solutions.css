@@ -11,8 +11,8 @@ padding: 20px 15px 20px 15px;
 .ai{
    display: flex;
     width: 100%;
- padding: 10px;
-    justify-content:space-between;
+ /* padding: 10px; */
+    /* justify-content:space-between; */
 }
 .aImg{
     width: 25%;
@@ -20,7 +20,7 @@ padding: 20px 15px 20px 15px;
    
 }
 .IOmg{
-    width: 35%;
+    width: 37%;
     padding: 10px 15px 10px 15px;
 }
 .BigImg{
@@ -34,7 +34,7 @@ padding: 20px 15px 20px 15px;
 
 .para{
   padding: 10px 85px 10px 65px;
-  text-align: left;
+  text-align: justify;
   font-size: 15px;
   color: gray;
 }

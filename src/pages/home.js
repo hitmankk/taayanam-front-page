@@ -119,7 +119,7 @@ function Home() {
             className="sub-title"
             // style={{ backgroundColor: "rgb(255, 193, 142)" }}
           >
-            Solutions We Provide
+            Solutions
             <br />
           </h1>
           <div className="services-list">
@@ -170,24 +170,19 @@ function Home() {
         </div>
       </div>
 
-      <div className="Products">
+      {/* <div className="Products">
         <h1 className="sub-title">Stacks</h1>
         <h1 className="stackH">Artificial Intelligence </h1>
         <div className="Product1">
-          {/* Your slide-in section content goes here */}
-
           <img className="aiStack" src={AI} alt="" />
           <br />
           <p className="para1">
             At the heart of Taayanam's technological prowess lies Artificial
-            Intelligence (AI), a pivotal and central force that empowers
-            intelligent decision-making through the adept application of
-            sophisticated algorithms and machine learning models.
+            Intelligence (AI).
           </p>
         </div>
         <h1 className="stackH">Internet Of Things</h1>
         <div className="Product1">
-          {/* Your slide-in section content goes here */}
           <img className="IOT" src={IOT} alt="" />
 
           <p className="para1">
@@ -200,7 +195,6 @@ function Home() {
         </div>
         <h1 className="stackH">Big Data Analysis</h1>
         <div className="Product1">
-          {/* Your slide-in section content goes here */}
           <img className="IOT" src={BigDAta} alt="" />
           <p className="para1">
             The utilization of Big Data analysis serves as the foundational
@@ -213,7 +207,6 @@ function Home() {
 
         <h1 className="stackH">Geospatial Technology</h1>
         <div className="Product1">
-          {/* Your slide-in section content goes here */}
           <img className="IOT" src={Geo} alt="" />
           <p className="para1">
             Geospatial Technology stands as an indispensable cornerstone within
@@ -222,6 +215,40 @@ function Home() {
             enhancement contributes to a heightened level of precision in the
             decision-making processes employed by Taayanam.
           </p>
+        </div>
+      </div> */}
+
+      <div class="portfolio" id="portfolio">
+        <div class="container1">
+          <h1 class="sub-title">Stacks</h1>
+          <div class="work-list">
+            <div class="work">
+              <img src={AI} alt="" />
+              <div class="layer">
+                <h3>Artificial Intelligence</h3>
+              </div>
+            </div>
+            <div class="work">
+              <img src={IOT} alt="" />
+              <div class="layer">
+                <h3>Internet Of Things</h3>
+
+                <i class="fa-solid fa-up-right-from-square"></i>
+              </div>
+            </div>
+            <div class="work">
+              <img src={BigDAta} alt="" />
+              <div class="layer">
+                <h3>Big Data Analysis</h3>
+              </div>
+            </div>
+            <div class="work">
+              <img src={Geo} alt="" />
+              <div class="layer">
+                <h3>Geospatial Technology</h3>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 

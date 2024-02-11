@@ -9,10 +9,10 @@ const about = () => {
     <div className="about">
       <img className="start" src={about1} alt="" />
 
-      <h1 className="visionHeading">Our Vision:</h1>
+      <h1 className="visionHeading">Vision</h1>
       <p className="text">Empowering Progress through Diversified Innovation</p>
       <div className="vision">
-        <p className="text1" style={{ textAlign: "left" }}>
+        <p className="text1" style={{ textAlign: "justify" }}>
           At Taayanam, our vision is to be the catalyst for transformative
           change across diverse sectors. We envision a future where technology
           seamlessly integrates with every facet of society, from
@@ -44,9 +44,9 @@ const about = () => {
           imaginable
         </p>
       </div>
-      <h1 className="visionHeading">Mission:</h1>
+      <h1 className="visionHeading">Mission</h1>
       <div className="mission">
-        <p className="text2" style={{ textAlign: "left" }}>
+        <p className="text2" style={{ textAlign: "justify" }}>
           At Taayanam our mission is to pioneer transformative IT solutions that
           empower businesses and industries to thrive in the digital era. We are
           committed to delivering innovative, client-centric services across
@@ -80,8 +80,8 @@ const about = () => {
       <br />
       <br />
       <div className="goal">
-        <h1 className="visionHeading">Goals:</h1>
-        <p className="text1" style={{ textAlign: "left" }}>
+        <h1 className="visionHeading">Goals</h1>
+        <p className="text1" style={{ textAlign: "justify" }}>
           Our overarching goal at Taayanam is to be a trailblazer in the IT
           industry, setting new standards for innovation, reliability, and
           client satisfaction. We aim to achieve this by consistently delivering

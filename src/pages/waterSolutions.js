@@ -29,7 +29,7 @@ const waterSolutions = () => {
           </h1>
           <p
             className="agriPara"
-            style={{ textAlign: "left", padding: "3% 10% 3% 10%" }}
+            style={{ textAlign: "justify", padding: "3% 10% 3% 10%" }}
           >
             Presenting <strong>tayanH2O</strong>, a robust platform equipped for
             hydro-meteorological monitoring and hydrologic forecasting. This
@@ -54,7 +54,7 @@ const waterSolutions = () => {
                 <title>Placeholder</title>
               </svg>
               <h2 className="fw-normal">Use of AI</h2>
-              <p style={{ textAlign: "left", padding: "10%" }}>
+              <p style={{ textAlign: "justify" }}>
                 <strong> TayanH2O</strong> employs AI models combined with the
                 strength of location intelligence, streamlining computations and
                 running real-time hydrology, hydraulic, and crop models. This
@@ -81,7 +81,7 @@ const waterSolutions = () => {
                 <title>Placeholder</title>
               </svg>
               <h2 className="fw-normal">Cloud-Powered Technology</h2>
-              <p style={{ textAlign: "left", padding: "10%" }}>
+              <p style={{ textAlign: "justify" }}>
                 The platform is equipped with state-of-the-art technology,
                 utilizing cloud features to process collected data and aggregate
                 it effectively. TayanFarm ensures that users have access to
@@ -107,7 +107,7 @@ const waterSolutions = () => {
                 <title>Placeholder</title>
               </svg>
               <h2 className="fw-normal">Ready for Data Integration</h2>
-              <p style={{ textAlign: "left", padding: "10%" }}>
+              <p style={{ textAlign: "justify" }}>
                 <strong>TayanH2O's</strong> platform seamlessly supports data
                 collected from diverse sources, including IoT sensors,
                 satellites, API integrations, and crowd-sourcing. The collected
@@ -132,7 +132,10 @@ const waterSolutions = () => {
               </h2>
               <br />
 
-              <p className="lead" style={{ textAlign: "left", padding: "10%" }}>
+              <p
+                className="lead"
+                style={{ textAlign: "justify", padding: "5% 10% 0% 10%" }}
+              >
                 <strong> tayanH2O</strong> establishes an authoritative system
                 for all water resource-related information, ensuring real-time
                 visibility into diverse water sources. From rainfall and
@@ -167,7 +170,10 @@ const waterSolutions = () => {
                 Enhanced Decision Support <br />
               </h2>
               <br />
-              <p className="lead" style={{ textAlign: "left", padding: "10%" }}>
+              <p
+                className="lead"
+                style={{ textAlign: "justify", padding: "5% 10% 0% 10%" }}
+              >
                 <strong>tayanH2O</strong> stands as a vital tool for
                 decision-makers, offering real-time visibility into water
                 availability and demand. By seamlessly integrating data from
@@ -199,7 +205,10 @@ const waterSolutions = () => {
                 Ensuring Water Resource Sustainability <br />
               </h2>
               <br />
-              <p className="lead" style={{ textAlign: "left", padding: "10%" }}>
+              <p
+                className="lead"
+                style={{ textAlign: "justify", padding: "5% 10% 0% 10%" }}
+              >
                 In the realm of water security, <strong>tayanH2O</strong> plays
                 a pivotal role in promoting sustainable practices. By providing
                 accurate and timely information, the platform aids

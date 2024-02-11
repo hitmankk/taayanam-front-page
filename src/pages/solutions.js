@@ -25,9 +25,7 @@ const Solutions = () => {
             intelligent decision support. AI algorithms analyze real-time data
             from weather forecasts, soil conditions, and pest patterns to
             provide precise insights. Farmers receive actionable advisories on
-            optimal planting times, fertilizer usage, and pest management. This
-            precision enhances crop planning, reduces risks, and ultimately
-            contributes to increased yields and farmer prosperity.
+            optimal planting times, fertilizer usage, and pest management.
           </p>
 
           <h1 className="sub-title" style={{ padding: "3rem" }}>
@@ -67,9 +65,7 @@ const Solutions = () => {
             rainfall, reservoir levels, canal flow, and soil moisture. This
             comprehensive dataset enables accurate and timely decision-making
             for water allocation, flood warnings, and sustainable agricultural
-            practices. By optimizing water management, aquaWISE ensures
-            efficient resource utilization, mitigates water-related risks, and
-            supports long-term water sustainability.
+            practices.
           </p>
           <h1 className="sub-title" style={{ padding: "3rem" }}>
             Geospatial Technology

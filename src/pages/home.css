@@ -3,9 +3,7 @@
 
 
 body {
-  font-family: 'IBM Plex Mono', monospace;
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-family: 'IBM Plex Serif', serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-style: normal;
   /* color: gray; */
   font-weight: 400;
@@ -41,10 +39,11 @@ body {
 }
 #about p{
    font-size: 22px;
-   text-align: left;
+   text-align: justify;
    box-shadow: 10px 10px 11px 0px rgb(224, 224, 224);
    border-radius: 20px;
    padding:10px;
+   font-family: Arial, Helvetica, sans-serif;
 }
 .row{
    display: flex;
@@ -127,7 +126,7 @@ body {
    transition: background 0.5s, transform 0.5s;
 }
 .services-list .servicesDiv p{
-  text-align: left;
+  text-align: justify;
   padding: 10px 15px 10px 15px;
 }
 .services-list .servicesDiv i{
@@ -136,12 +135,14 @@ body {
 }
 .services-list .servicesDiv img{
    width: 150px;
+   margin-top: 10%;
    /* margin-bottom: 30px; */
 }
 .services-list .servicesDiv h2{
    font-size: 30px;
    font-weight: 800;
    margin-bottom: 15px;
+   margin-top: 30px;
  
 }
 .services-list .servicesDiv a{
@@ -192,7 +193,7 @@ background-size: contain;
   
 }
 .Product1{
- padding: 0px 50px 0px 50px;
+ padding: 0px 150px 0px 150px;
  display: flex;
  justify-content: space-between;
  
@@ -232,9 +233,10 @@ padding: 5% 0 5% 0;
 }
 
 .para1{
+  
   padding: 8% 10% 0% 10%;
   color: gray;
-  text-align: left;
+  text-align: justify;
   border-radius: 20px;
   box-shadow: 0px 0px 20px 1px rgb(202, 202, 202);
 
@@ -413,4 +415,97 @@ justify-content: center;
     width: 50%;
   /* padding: 5% 0 5% 0; */
   }
+}
+/* ------------------------- */
+#portfolio{
+  padding: 50px 0;
+  z-index: 9;
+  background:url(../assets/servicesImg.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+ 
+}
+.work-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-bottom: 50px;
+}
+.work{
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+}
+.work img{
+  width: 100%;
+  height:100% ;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+}
+.layer{
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(173, 173, 173, 0.6), orange) ;
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.5s;
+  z-index: 9
+  ;
+}
+.layer h3{
+  font: weight 500; 
+  margin-bottom: 20px;
+  z-index: 9;
+}
+.layer a{
+  margin-top: 20px;
+  color: orangered;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 60px;
+  background: #ffffff;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  z-index: 9;
+}
+.work:hover img{
+  transform: scale(1.1) ;
+}
+.work:hover .layer{
+  height: 100%;
+  z-index: 9;
+}
+.btn{
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid #ff004f;
+  padding: 14px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: white;
+  transition: background 0.5s;
+  z-index: 9;
+}
+.btn:hover{
+  background: orange;
+  z-index: 9;
+
+
 }

@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import Footer from "../component/footer";
 
 function Contact() {
   const form = useRef();
@@ -65,6 +66,7 @@ function Contact() {
           </form>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

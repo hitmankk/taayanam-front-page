@@ -1,6 +1,5 @@
 import React from "react";
 import "./agritech.css";
-import ai from "../assets/AI.png";
 
 import Footer from "../component/footer";
 
@@ -54,13 +53,12 @@ const agritech = () => {
                 <title>Placeholder</title>
               </svg>
               <h2 className="fw-normal">Use of AI</h2>
-              <p style={{ textAlign: "left" }}>
+              <p style={{ textAlign: "justify" }}>
                 <strong>TayanFarm</strong> employs <strong>AI models</strong>{" "}
                 combined with the strength of location intelligence,
                 streamlining computations and running real-time hydrology,
                 hydraulic, and crop models. This synergy of technologies
-                provides farmers with quick and actionable insights, saving
-                significant time and effort.
+                provides farmers with quick and actionable insights.
               </p>
               <p>
                 <a className="btn btn-danger" href="#">
@@ -82,7 +80,7 @@ const agritech = () => {
                 <title>Placeholder</title>
               </svg>
               <h2 className="fw-normal">Cloud-Powered Technology</h2>
-              <p style={{ textAlign: "left" }}>
+              <p style={{ textAlign: "justify" }}>
                 The platform is equipped with state-of-the-art technology,
                 utilizing <strong>cloud features</strong> to process collected
                 data and aggregate it effectively. <strong> TayanFarm</strong>{" "}
@@ -108,7 +106,7 @@ const agritech = () => {
                 <title>Placeholder</title>
               </svg>
               <h2 className="fw-normal">Ready for Data Integration</h2>
-              <p style={{ textAlign: "left" }}>
+              <p style={{ textAlign: "justify" }}>
                 <strong> TayanFarm's</strong> platform seamlessly supports data
                 collected from diverse sources, including IoT sensors,
                 satellites, API integrations, and crowd-sourcing. The collected
@@ -126,7 +124,7 @@ const agritech = () => {
           <hr className="featurette-divider" />
           {/* --------------------------agritech Section 1 ---------------------------------- */}
 
-          <div className="row featurette agritechSection1">
+          <div className="row agritechSection1">
             <div className="col-md-7">
               <h2 className="featurette-heading fw-normal lh-1">
                 <strong> TayanFarm</strong> : Empowering Farmers{" "}
@@ -134,7 +132,10 @@ const agritech = () => {
                   with AI-Driven Crop Management
                 </span>
               </h2>
-              <p className="lead" style={{ textAlign: "left", padding: "10%" }}>
+              <p
+                className="lead"
+                style={{ textAlign: "justify", padding: "10% 10% 0% 10%" }}
+              >
                 <strong>TayanFarm's AI-based farm lifecycle management</strong>{" "}
                 is tailored to empower farmers to make data-driven decisions,
                 enhancing crop success rates and earnings in the face of adverse
@@ -168,7 +169,10 @@ const agritech = () => {
                   with Decision Support System.
                 </span>
               </h2>
-              <p className="lead" style={{ textAlign: "left", padding: "10%" }}>
+              <p
+                className="lead"
+                style={{ textAlign: "justify", padding: "10%" }}
+              >
                 <strong>TayanFarm's</strong> not only secures farmers through
                 technology-driven farming but also fosters collaboration among
                 communities and governments. While the primary beneficiary is
@@ -203,7 +207,10 @@ const agritech = () => {
                   Intelligence & Management Hub
                 </span>
               </h2>
-              <p className="lead" style={{ textAlign: "left", padding: "10%" }}>
+              <p
+                className="lead"
+                style={{ textAlign: "justify", padding: "10%" }}
+              >
                 Revolutionizing the agricultural landscape,{" "}
                 <strong>TayanFarm</strong> employs cutting-edge technologies
                 such as AI, remote sensing, IoT, Big Data, and mobility to
@@ -214,12 +221,7 @@ const agritech = () => {
                 Presenting an integrated crop management system developed by{" "}
                 <strong>TayanFarm</strong>, offering decision support and
                 advisories for stakeholders throughout the entire crop lifecycle
-                – from planting to harvest. User-Friendly Interface{" "}
-                <srong>TayanFarm's</srong> platform ensures ease of use,
-                featuring a GIS portal, analytics, and dashboard elements like
-                tables and charts. These tools facilitate data visualization
-                using maps and smart widgets, empowering users to derive
-                actionable insights effortlessly.
+                – from planting to harvest.
               </p>
             </div>
             <div className="col-md-5">

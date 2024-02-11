@@ -28,7 +28,6 @@
     background-size: cover;
 }
 .lead{
-
     font-size: medium;
 }
 .agriHeading{
@@ -56,8 +55,9 @@ margin-right: 0%;
 }
 .agritechSection1{
     padding-top: 8% ;
-    padding-bottom: 8%;
+    padding-bottom: 0%;
     background: url(../assets/aboutImg.png);
+    height: fit-content;
 }
 .agritech3{
     background: url(../assets/agritech3.png);
@@ -67,6 +67,7 @@ margin-right: 0%;
     border-width: 1px;
     box-shadow:  5px 5px 6px #848484,
     -5px -5px 6px #cbcbcb;
+    height: fit-content;
 }
 .agritech4{
     background: url(../assets/smart-farming-with-agriculture-iot.jpg);
@@ -74,9 +75,11 @@ margin-right: 0%;
     background-repeat: no-repeat;
     box-shadow:  5px 5px 6px #848484,
     -5px -5px 6px #cbcbcb;
+    height: fit-content;
 }
 .agritech5{
     background: url(../assets/person-working-html-computer.jpg);
+    height: fit-content;
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow:  5px 5px 6px #848484,

@@ -104,7 +104,7 @@ function Navbar() {
                       activeClassName="active"
                       onClick={handleDropdownClose}
                     >
-                      Customized It Solutions
+                      Customized IT Solutions
                     </NavLink>
                   </li>
                 </ul>

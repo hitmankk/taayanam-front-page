@@ -29,7 +29,7 @@ const customizedIt = () => {
           </h1>
           <p
             className="agriPara"
-            style={{ textAlign: "left", padding: "3% 10% 3% 10%" }}
+            style={{ textAlign: "justify", padding: "3% 10% 3% 10%" }}
           >
             Introducing <strong>TayanTech</strong>, a comprehensive platform
             equipped to provide tailored IT solutions for diverse business
@@ -54,13 +54,12 @@ const customizedIt = () => {
                 <title>Placeholder</title>
               </svg>
               <h2 className="fw-normal">Use of AI</h2>
-              <p style={{ textAlign: "left", padding: "10%" }}>
+              <p style={{ textAlign: "justify" }}>
                 <strong>TayanTech</strong> employs <strong>AI models</strong>{" "}
                 combined with the strength of location intelligence,
                 streamlining computations and running real-time hydrology,
                 hydraulic, and crop models. This synergy of technologies
-                provides farmers with quick and actionable insights, saving
-                significant time and effort.
+                provides farmers with quick and actionable insights.
               </p>
               <p>
                 <a className="btn btn-danger" href="#">
@@ -82,7 +81,7 @@ const customizedIt = () => {
                 <title>Placeholder</title>
               </svg>
               <h2 className="fw-normal">Cloud-Powered Technology</h2>
-              <p style={{ textAlign: "left", padding: "10%" }}>
+              <p style={{ textAlign: "justify" }}>
                 The platform is equipped with state-of-the-art technology,
                 utilizing cloud features to process collected data and aggregate
                 it effectively. TayanFarm ensures that users have access to
@@ -108,7 +107,7 @@ const customizedIt = () => {
                 <title>Placeholder</title>
               </svg>
               <h2 className="fw-normal">Ready for Data Integration</h2>
-              <p style={{ textAlign: "left", padding: "10%" }}>
+              <p style={{ textAlign: "justify" }}>
                 <strong> TayanTech's platform</strong> seamlessly supports data
                 collected from diverse sources, including IoT sensors,
                 satellites, API integrations, and crowd-sourcing. The collected
@@ -133,7 +132,10 @@ const customizedIt = () => {
               </h2>
               <br />
 
-              <p className="lead" style={{ textAlign: "left", padding: "10%" }}>
+              <p
+                className="lead"
+                style={{ textAlign: "justify", padding: "5% 10% 0% 10%" }}
+              >
                 <strong> TayanTech</strong> establishes an authoritative system
                 for all IT-related information, ensuring real-time visibility
                 into diverse technological domains. From data analytics and
@@ -166,7 +168,10 @@ const customizedIt = () => {
                 Enhanced Decision Support <br />
               </h2>
               <br />
-              <p className="lead" style={{ textAlign: "left", padding: "10%" }}>
+              <p
+                className="lead"
+                style={{ textAlign: "justify", padding: "5% 10% 0% 10%" }}
+              >
                 <strong> TayanTech</strong> stands as a vital tool for
                 decision-makers, offering real-time visibility into IT solutions
                 availability and demand. By seamlessly integrating data from
@@ -198,7 +203,10 @@ const customizedIt = () => {
                 Ensuring IT Resource Sustainability <br />
               </h2>
               <br />
-              <p className="lead" style={{ textAlign: "left", padding: "10%" }}>
+              <p
+                className="lead"
+                style={{ textAlign: "justify", padding: "5% 10% 0% 10%" }}
+              >
                 In the realm of business security, <strong>TayanTech</strong>{" "}
                 plays a pivotal role in promoting sustainable IT practices. By
                 providing accurate and timely information, the platform aids
