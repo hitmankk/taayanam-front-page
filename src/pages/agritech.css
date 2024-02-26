@@ -5,6 +5,9 @@
    
     background-color: #101318;
 }
+.agritech > div{
+    background-color: black;
+}
 .agritechImg{
     width: 75%;
     
@@ -32,7 +35,6 @@
 }
 .agriHeading{
     color: rgb(255, 80, 109);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 800;
     font-style: normal;
     padding: 5%;
@@ -56,20 +58,24 @@ margin-right: 0%;
 .agritechSection1{
     padding-top: 8% ;
     padding-bottom: 0%;
-    background: url(../assets/aboutImg.png);
-    height: fit-content;
+   
 }
 .agritech3{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     background: url(../assets/agritech3.png);
     background-size: cover;
     background-repeat: no-repeat;
-    border-color: #101318;
-    border-width: 1px;
+   
     box-shadow:  5px 5px 6px #848484,
     -5px -5px 6px #cbcbcb;
     height: fit-content;
 }
 .agritech4{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     background: url(../assets/smart-farming-with-agriculture-iot.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -78,6 +84,9 @@ margin-right: 0%;
     height: fit-content;
 }
 .agritech5{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     background: url(../assets/person-working-html-computer.jpg);
     height: fit-content;
     background-size: cover;
@@ -89,7 +98,29 @@ margin-right: 0%;
 
 /* --------------- */
 
-.container{
+.containers{
+    display: flex;
+    margin: 1vmax auto;
+    width: 90vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
   padding-top: 5%;
   background:#dcdcdc;
+}
+
+.cardContain{
+    width: 25vmax;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-decoration: none;
+    margin: 2vmax;
+    transition: all 0.5s;
+    padding-bottom: 0.5vmax;
+}
+.cardContain > svg {
+    margin: auto;
+    
+
 }

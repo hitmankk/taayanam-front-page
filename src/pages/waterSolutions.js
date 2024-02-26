@@ -4,7 +4,7 @@ import "./waterSolutions.css";
 import Footer from "../component/footer";
 const videosData = [
   {
-    url: require("../assets/waterTech.mp4"),
+    url: require("../assets/TaAyan-h2O.mp4"),
     text: "Video 1 - Introduction",
   },
 ];
@@ -24,23 +24,23 @@ const waterSolutions = () => {
         </div>
         <div className="agriDetails">
           <h1 className="agriHeading">
-            <strong> TayanH2O</strong>: Fortifying Water Security through
+            <strong> TaayanH2O</strong>: Fortifying Water Security through
             Advanced Technology
           </h1>
           <p
             className="agriPara"
             style={{ textAlign: "justify", padding: "3% 10% 3% 10%" }}
           >
-            Presenting <strong>tayanH2O</strong>, a robust platform equipped for
-            hydro-meteorological monitoring and hydrologic forecasting. This
+            Presenting <strong>taayanH2O</strong>, a robust platform equipped
+            for hydro-meteorological monitoring and hydrologic forecasting. This
             innovative system offers actionable information for various domains,
             including flood warning, hydropower operations, water allocation,
             and agriculture operations.
           </p>
         </div>
-        <div className="container marketing">
+        <div className="containers">
           <div className="row">
-            <div className="col-lg-4" style={{ paddingBottom: "5%" }}>
+            <div className="cardContain">
               <svg
                 className="rounded-circle AI"
                 width="140"
@@ -55,7 +55,7 @@ const waterSolutions = () => {
               </svg>
               <h2 className="fw-normal">Use of AI</h2>
               <p style={{ textAlign: "justify" }}>
-                <strong> TayanH2O</strong> employs AI models combined with the
+                <strong> TaayanH2O</strong> employs AI models combined with the
                 strength of location intelligence, streamlining computations and
                 running real-time hydrology, hydraulic, and crop models. This
                 synergy of technologies provides farmers with quick and
@@ -67,7 +67,7 @@ const waterSolutions = () => {
                 </a>
               </p>
             </div>
-            <div className="col-lg-4">
+            <div className="cardContain">
               <svg
                 className="rounded-circle cloud"
                 width="140"
@@ -84,7 +84,7 @@ const waterSolutions = () => {
               <p style={{ textAlign: "justify" }}>
                 The platform is equipped with state-of-the-art technology,
                 utilizing cloud features to process collected data and aggregate
-                it effectively. TayanFarm ensures that users have access to
+                it effectively. TaayanFarm ensures that users have access to
                 advanced tools for deriving meaningful insights from the data
                 gathered.
               </p>
@@ -94,7 +94,7 @@ const waterSolutions = () => {
                 </a>
               </p>
             </div>
-            <div className="col-lg-4">
+            <div className="cardContain">
               <svg
                 className="rounded-circle data"
                 width="140"
@@ -108,7 +108,7 @@ const waterSolutions = () => {
               </svg>
               <h2 className="fw-normal">Ready for Data Integration</h2>
               <p style={{ textAlign: "justify" }}>
-                <strong>TayanH2O's</strong> platform seamlessly supports data
+                <strong>TaayanH2O's</strong> platform seamlessly supports data
                 collected from diverse sources, including IoT sensors,
                 satellites, API integrations, and crowd-sourcing. The collected
                 data is processed for the next level of operations, enhancing
@@ -121,10 +121,10 @@ const waterSolutions = () => {
               </p>
             </div>
           </div>
-
-          <hr className="featurette-divider" />
-          {/* --------------------------agritech Section 1 ---------------------------------- */}
-
+        </div>
+        <hr className="featurette-divider" />
+        {/* --------------------------agritech Section 1 ---------------------------------- */}
+        <div className="containerSection">
           <div className="row featurette agritechSection1">
             <div className="col-md-7">
               <h2 className="featurette-heading fw-normal lh-1">
@@ -136,12 +136,12 @@ const waterSolutions = () => {
                 className="lead"
                 style={{ textAlign: "justify", padding: "5% 10% 0% 10%" }}
               >
-                <strong> tayanH2O</strong> establishes an authoritative system
+                <strong> taayanH2O</strong> establishes an authoritative system
                 for all water resource-related information, ensuring real-time
                 visibility into diverse water sources. From rainfall and
                 reservoirs to canals, minor irrigation tanks, ground water, and
                 soil moisture,
-                <strong>tayanH2O</strong> provides a holistic view. Integrated
+                <strong>taayanH2O</strong> provides a holistic view. Integrated
                 with insights into water demand, the Water Resource Information
                 Management System (WRIMS) empowers key decision-makers for
                 effective planning and management of water resources at the
@@ -174,11 +174,11 @@ const waterSolutions = () => {
                 className="lead"
                 style={{ textAlign: "justify", padding: "5% 10% 0% 10%" }}
               >
-                <strong>tayanH2O</strong> stands as a vital tool for
+                <strong>taayanH2O</strong> stands as a vital tool for
                 decision-makers, offering real-time visibility into water
                 availability and demand. By seamlessly integrating data from
                 multiple sources, including rainfall, reservoirs, and ground
-                resources, <strong>tayanH2O</strong> facilitates informed
+                resources, <strong>taayanH2O</strong> facilitates informed
                 decision-making in critical areas such as flood management,
                 hydropower operations, water allocation, and agricultural
                 planning.
@@ -209,15 +209,16 @@ const waterSolutions = () => {
                 className="lead"
                 style={{ textAlign: "justify", padding: "5% 10% 0% 10%" }}
               >
-                In the realm of water security, <strong>tayanH2O</strong> plays
+                In the realm of water security, <strong>taayanH2O</strong> plays
                 a pivotal role in promoting sustainable practices. By providing
                 accurate and timely information, the platform aids
                 decision-makers in planning and managing water resources
-                effectively. <strong>tayanH2O</strong> is designed to be a
+                effectively. <strong>taayanH2O</strong> is designed to be a
                 comprehensive solution, supporting key stakeholders in their
                 efforts towards sustainable water management. Experience the
                 Future of Water Resource Management with{" "}
-                <strong>tayanH2O</strong> – Where Intelligence Meets Innovation.
+                <strong>taayanH2O</strong> – Where Intelligence Meets
+                Innovation.
               </p>
             </div>
             <div className="col-md-5">
@@ -234,8 +235,8 @@ const waterSolutions = () => {
               </svg>
             </div>
           </div>
-          {/* ------------------------------------------- */}
         </div>
+        {/* ------------------------------------------- */}
       </div>
       <Footer />
     </>

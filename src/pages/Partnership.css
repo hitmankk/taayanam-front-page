@@ -1,0 +1,27 @@
+.partnership{
+    display: flex;
+    margin-top: 2vmax;
+    margin: 1vmax auto;
+    width: 60vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+  box-shadow: 0px 0px 10px 0px rgb(160, 160, 160);
+}
+.content{
+    width: 26vmax;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    margin: 2vmax;
+    padding-bottom: 0.5vmax;
+    font-size:16px;
+    font-weight:400;
+    
+    
+}
+.content > img{
+    width: 100%;
+    border-color: black;
+    box-shadow: 0px 0px 10px 0px rgb(160, 160, 160);
+}

@@ -57,7 +57,7 @@ margin-right: 0%;
 .agritechSection1{
     padding-top: 8% ;
     padding-bottom: 8%;
-    background: url(../assets/aboutImg.png);
+   
 }
 .agritech3{
     background: url(../assets/agritech3.png);
@@ -86,7 +86,34 @@ margin-right: 0%;
 
 /* --------------- */
 
-.container{
+.containers{
+    display: flex;
+    margin: 1vmax auto;
+    width: 90vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
   padding-top: 5%;
   background:#dcdcdc;
+}
+
+.cardContain{
+    width: 25vmax;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-decoration: none;
+    margin: 2vmax;
+    transition: all 0.5s;
+    padding-bottom: 0.5vmax;
+}
+.cardContain > svg {
+    margin: auto;
+    
+
+}
+.containerSection{
+    padding: 0vmax 15vmax 0vmax 15vmax;
+   
+    margin: auto;
 }

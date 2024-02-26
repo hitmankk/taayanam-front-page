@@ -39,11 +39,11 @@ const Solutions = () => {
             security vulnerabilities, and compromised performance. The
             one-size-fits-all approach hinders business operations and growth.
             <br />
-            <br /> TayanTech employs Big Data analysis to customize IT
+            <br /> TaayanTech employs Big Data analysis to customize IT
             solutions. By processing vast datasets encompassing user behaviors,
             system logs, and performance metrics, we extract valuable insights.
             These insights inform the tailoring of analytics, cybersecurity, and
-            application development services. TayanTech ensures businesses have
+            application development services. TaayanTech ensures businesses have
             secure, high-performance IT infrastructure aligned with their unique
             requirements. This customized approach not only enhances operational
             efficiency but also strengthens cybersecurity measures, fostering a
@@ -61,11 +61,11 @@ const Solutions = () => {
             hydropower operations, and agricultural planning. Inaccurate data
             leads to suboptimal decision-making and potential water shortages.
             Taayanam leverages IoT to establish a connected network for
-            real-time water resource monitoring. IoT sensors collect data on
-            rainfall, reservoir levels, canal flow, and soil moisture. This
-            comprehensive dataset enables accurate and timely decision-making
-            for water allocation, flood warnings, and sustainable agricultural
-            practices.
+            real-time water resource monitoring.
+            <br /> IoT sensors collect data on rainfall, reservoir levels, canal
+            flow, and soil moisture. This comprehensive dataset enables accurate
+            and timely decision-making for water allocation, flood warnings, and
+            sustainable agricultural practices.
           </p>
           <h1 className="sub-title" style={{ padding: "3rem" }}>
             Geospatial Technology

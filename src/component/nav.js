@@ -107,6 +107,17 @@ function Navbar() {
                       Customized IT Solutions
                     </NavLink>
                   </li>
+                  <li>
+                    <NavLink
+                      className="dropdown-item"
+                      exact
+                      to="/branding"
+                      activeClassName="active"
+                      onClick={handleDropdownClose}
+                    >
+                      Branding & Marketing
+                    </NavLink>
+                  </li>
                 </ul>
               </div>
             </li>
@@ -124,12 +135,12 @@ function Navbar() {
             <li className="nav-item">
               <NavLink
                 exact
-                to="/testimonials"
+                to="/partnership"
                 activeClassName="active"
                 className="nav-links"
                 onClick={handleClick}
               >
-                Testimonials
+                Partnership
               </NavLink>
             </li>
             <li className="nav-item">

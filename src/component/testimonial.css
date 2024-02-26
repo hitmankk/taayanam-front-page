@@ -20,8 +20,9 @@
   .testimonial-author{
    bottom: 0;
     align-items: center;
-    font-size:30px;
-    font-weight: bolder;
+    font-size:14px;
+    font-weight: bold;
+    color: gray;
 
   }
 

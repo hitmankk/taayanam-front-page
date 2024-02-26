@@ -11,7 +11,7 @@ class Footer extends Component {
           <div className="main-footer">
             <div className="logoinfo">
               <h2>Have a Great Day!</h2>
-              <p>By Tayanam</p>
+              <p>By Taayanam</p>
 
               <div className="contact-details">
                 <h1>Contact Us</h1>
@@ -65,7 +65,7 @@ class Footer extends Component {
               </div>
             </div>
           </div>
-          <footer>© Tayanam Copyright 2023 All Rights Reserved</footer>
+          <footer>© Taayanam Copyright 2023 All Rights Reserved</footer>
         </div>
       </>
     );

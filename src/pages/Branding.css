@@ -1,0 +1,15 @@
+body{
+    background-color:rgb(255, 247, 233);
+}
+.branding3{
+ background: url(../assets/brandSection1.png);
+ background-size: contain;
+}
+.branding4{
+    background: url(../assets/SocialMedia.png);
+    background-size: contain;
+   }
+.branding5{
+    background: url(../assets/analytics.png);
+    background-size: contain;
+   }

@@ -12,6 +12,8 @@ import WaterSolutions from "./pages/waterSolutions";
 import CustomizedIt from "./pages/customizedIt";
 import Solutions from "./pages/solutions";
 import Testimonials from "./pages/Testimonial";
+import Partnership from "./pages/Partnership";
+import Branding from "./pages/Branding";
 
 class App extends Component {
   render() {
@@ -35,11 +37,9 @@ class App extends Component {
             ></Route>
             <Route exact path="/solutions" element={<Solutions />}></Route>
             <Route exact path="/contact" element={<Contact />}></Route>
-            <Route
-              exact
-              path="/testimonials"
-              element={<Testimonials />}
-            ></Route>
+            <Route exact path="/testimonial" element={<Testimonials />}></Route>
+            <Route exact path="/partnership" element={<Partnership />}></Route>
+            <Route exact path="/branding" element={<Branding />}></Route>
           </Routes>
         </div>
       </Router>

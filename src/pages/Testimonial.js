@@ -3,7 +3,7 @@ import React from "react";
 const Testimonials = () => {
   return (
     <div>
-      <h1 className="sub-title">Testimonial</h1>
+      <h1 className="sub-title">Partnership</h1>
     </div>
   );
 };
